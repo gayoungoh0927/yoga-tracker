@@ -1,0 +1,27 @@
+body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0; }
+.container { text-align: center; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+.calendar-day { padding: 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
+.calendar-day.attended { background-color: #a8e6cf; color: white; }
+.calendar-day.today { font-weight: bold; border-color: #333; }
+.day-name { font-weight: bold; text-align: center; padding-bottom: 5px; }
+.modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); }
+.modal-content { background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 400px; text-align: center; border-radius: 10px; position: relative; }
+.close-button { color: #aaa; position: absolute; top: 10px; right: 20px; font-size: 28px; font-weight: bold; }
+.close-button:hover, .close-button:focus { color: black; text-decoration: none; cursor: pointer; }
+.emoji-selection .emoji { cursor: pointer; font-size: 24px; margin: 0 10px; }
+.emoji-selection .emoji:hover { transform: scale(1.2); }
+.calendar-day .emoji-display { font-size: 18px; margin-top: 5px; }
+.cost-calculator { margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee; }
+.cost-calculator div { margin-bottom: 10px; }
+.cost-calculator input { padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin: 0 5px; }
+.cost-calculator button { padding: 5px 10px; border-radius: 5px; border: none; background-color: #a8e6cf; color: white; cursor: pointer; }
+.cost-calculator button:hover { background-color: #87c9a5; }
+.cost-per-session-wrapper { display: flex; justify-content: center; align-items: center; gap: 10px; }
+.edit-btn { font-size: 12px; padding: 3px 8px; background-color: #ddd; color: #333; }
+.edit-btn:hover { background-color: #ccc; }
+#fee-input-container { margin-top: 10px; }
+.motivation-message { margin-top: 10px; font-size: 14px; color: #666; }
+.remove-btn { margin-top: 15px; padding: 8px 15px; background-color: #ff6b6b; color: white; border: none; border-radius: 5px; cursor: pointer; display: none; }
+.remove-btn:hover { background-color: #e55a5a; }
